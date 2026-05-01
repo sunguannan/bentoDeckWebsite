@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BentoDeck | A Faster Way to Control Your Mac</title>
+  <style>
+    :root {
+      --bg: #261c17;
+      --card: #1f1713;
+      --gold: #d9a64d;
+      --text: rgba(217, 166, 77, 0.92);
+      --text-soft: rgba(217, 166, 77, 0.72);
+      --border: rgba(217, 166, 77, 0.10);
+      --shadow: rgba(0, 0, 0, 0.35);
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      margin: 0;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 80px 20px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 56px;
+    }
+    .logo {
+      width: 84px;
+      height: 84px;
+      object-fit: contain;
+      margin: 0 auto 14px;
+      display: block;
+    }
+    .title {
+      font-size: 46px;
+      font-weight: 900;
+      letter-spacing: -0.8px;
+      margin: 0 0 10px;
+      color: var(--gold);
+    }
+    .tagline {
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--text-soft);
+      margin: 0;
+    }
+    .card {
+      background: var(--card);
+      border-radius: 24px;
+      padding: 32px;
+      margin-bottom: 22px;
+      box-shadow: 0 12px 40px var(--shadow);
+      border: 1px solid var(--border);
+    }
+    h2 {
+      font-size: 22px;
+      font-weight: 800;
+      margin: 0 0 18px;
+      color: var(--gold);
+    }
+    .faq-item {
+      margin-bottom: 18px;
+    }
+    .faq-question {
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 6px;
+      color: var(--text);
+    }
+    .faq-answer {
+      font-size: 14px;
+      color: var(--text-soft);
+    }
+    .btn {
+      display: inline-block;
+      padding: 14px 22px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 800;
+      font-size: 14px;
+      letter-spacing: 0.5px;
+      transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+      user-select: none;
+    }
+    .btn-primary {
+      background: var(--gold);
+      color: #1a140f;
+      box-shadow: 0 10px 24px rgba(217, 166, 77, 0.18);
+    }
+    .btn-secondary {
+      background: rgba(217, 166, 77, 0.10);
+      color: var(--gold);
+      border: 1px solid var(--border);
+    }
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 30px rgba(217, 166, 77, 0.22);
+    }
+    footer {
+      text-align: center;
+      margin-top: 72px;
+      font-size: 12px;
+      color: rgba(217, 166, 77, 0.55);
+    }
+    footer a {
+      color: rgba(217, 166, 77, 0.70);
+      text-decoration: none;
+      border-bottom: 1px dotted rgba(217, 166, 77, 0.55);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img class="logo" src="logo.png" alt="BentoDeck logo" />
+      <h1 class="title">BentoDeck</h1>
+      <p class="tagline">A fast, local way to control your Mac from iPhone.</p>
+    </header>
+
+    <div class="card">
+      <h2>Customer Support</h2>
+
+      <div class="faq-item">
+        <div class="faq-question">How do I connect?</div>
+        <div class="faq-answer">
+          Open BentoDeck on Mac and tap CONNECT to show a 4‑digit PIN. On iPhone, open BentoDeck and enter the PIN.
+          Keep both devices on the same Wi‑Fi / local network when possible.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Does BentoDeck use the cloud?</div>
+        <div class="faq-answer">
+          No. BentoDeck connects directly to your Mac over your local network. We do not run servers for your content.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">How do I restore a purchase?</div>
+        <div class="faq-answer">
+          Open the purchase panel and tap RESTORE PURCHASES.
+        </div>
+      </div>
+
+      <p style="color: var(--text-soft); margin: 18px 0 18px;">Need help? Email us.</p>
+      <a class="btn btn-primary" href="mailto:as@humanism.ltd">Email Support</a>
+    </div>
+
+    <div class="card" style="text-align: center;">
+      <h2>Privacy Policy</h2>
+      <p style="color: var(--text-soft); margin: 0 0 18px;">
+        BentoDeck is built with a privacy‑first, local‑first design.
+      </p>
+      <a class="btn btn-secondary" href="privacy.html">Read Full Privacy Policy</a>
+    </div>
+
+    <footer>
+      &copy; 2026 BentoDeck. All rights reserved.<br />
+      <a href="privacy.html">Privacy</a>
+    </footer>
+  </div>
+</body>
+</html>
